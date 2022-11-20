@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import ProgressStep from './components/Form/ProgressStep.js'
+import StepOne from './components/Form/Step/StepOne.js'
+//import StepTwo from './components/Form/Step/StepTwo.js'
+//import StepThree from './components/Form/Step/StepThree.js'
+import ProgressControl from './components/Form/ProgressControl.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className={styles.mainContainer}>
+  <ProgressStep/>
+  <StepOne/>
+  <ProgressControl/>
+  </div>
   );
 }
-
 export default App;

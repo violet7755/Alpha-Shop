@@ -1,0 +1,92 @@
+.progressTitle {
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--main-text);
+}
+
+
+.progressContainer {
+  width: 536px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.progressBar {
+  display: flex;
+  width: 60px;
+  height: 1px;
+  border: 1px solid var(--done-progress-border);
+  background-color: var(--done-progress-border);
+}
+
+.progressBarUndone {
+  display: flex;
+  width: 60px;
+  height: 1px;
+  border: 1px solid var(--undone-progress-border);
+  background-color: var(--undone-progress-border);
+}
+
+.progressGroup {
+  display: flex;
+  align-items: center;
+}
+
+.progressIcon,
+span[phase=undone] {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.progressIcon {
+  background-color: var(--pg-addr-bg-color); 
+}
+
+span[phase=undone] {
+  background-color: transparent;
+  border: 1px solid var(--progress-undone-color);
+}
+
+
+.progressText, 
+span[phase=undone] .progressText {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  font-weight: 700; 
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.progressText {
+  color: var(--progress-done-color);
+}
+
+span[phase=undone] .progressText {
+  color: var(--progress-undone-color);
+}
+
+
+.progressLabel,
+span[phase=undone] ~.progressLabel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.progressLabel {
+  color: var(--main-text);
+}
+
+span[phase=undone] ~.progress__label {
+  color: var(--progress-undone-color);
+}

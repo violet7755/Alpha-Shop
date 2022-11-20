@@ -1,0 +1,53 @@
+.progressControlContainer {
+ width: 540px;
+ height: 72px;
+ border-top: 2px solid #E6E6EB;
+ margin-top: 48px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+section[data-phase="address"] {
+ justify-content: end; 
+}
+
+
+button[id=next],
+button[id=prev], 
+button[id=confirm] {
+ width: 174px;
+ height: 46px;
+ border:none;
+ background-color:#F67599;
+ border-radius: 8px;
+ -webkit-appearance: none;
+ font-size: 14px;
+ line-height: 17px;
+ font-weight: 500;
+ color:#FFFFFF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap:12px;
+ cursor:pointer;
+}
+
+button[id=prev] {
+ color: #000000;
+ background-color: var(--background-color)
+}
+
+
+button[id=next] .leftArrow,
+button[id=prev] .rightArrow,
+button[id=confirm] .leftArrow,
+button[id=confirm] .rightArrow {
+ display:none;
+}
+
+
+

@@ -1,0 +1,35 @@
+.formContainer {
+  width: 540px;
+  margin-top: 64px;
+}
+
+
+.formTitle {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--main-text);
+}
+
+
+.inputContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+  margin-top: 24px;
+}
+
+:global(.inputCardHolder),
+:global(.inputCardNumber) {
+  grid-column: 1/5;
+}
+
+:global(.inputExpireDate) {
+  grid-column: 1/4;
+}
+
+:global(.inputCVC) {
+  grid-column: 4/7;
+}
