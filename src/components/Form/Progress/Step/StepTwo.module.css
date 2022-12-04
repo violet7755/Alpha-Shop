@@ -3,13 +3,11 @@
   margin-top: 64px;
 }
 
-
 .formTitle {
   margin-top: 0;
   font-weight: 700;
   font-size: 24px;
 }
-
 
 .radioGroupContainer {
   margin-top: 24px;
@@ -23,20 +21,18 @@
   cursor: pointer;
 }
 
-.radioGroup input[type='radio'] {
+.radioGroup input[type="radio"] {
   width: 24px;
   height: 24px;
   margin-right: 20px;
   border-radius: 50%;
-  border:1px solid;
+  border: 1px solid;
   -webkit-appearance: none;
 }
 
-
-
-.radioGroup input[type='radio']:checked {
-  box-shadow: inset 0px 0px 0px 7px #2A2A2A;
-  border:none;
+.radioGroup input[type="radio"]:checked {
+  box-shadow: inset 0px 0px 0px 7px #2a2a2a;
+  border: none;
 }
 
 .radioInfo {
@@ -53,8 +49,8 @@
   line-height: 20px;
 }
 
-input[id=shipping-dhl] ~.radioInfo .text {
-  font-weight:700;
+input[id="shipping-dhl"] ~ .radioInfo .text {
+  font-weight: 700;
 }
 
 .price,
@@ -77,13 +73,11 @@ input[id=shipping-dhl] ~.radioInfo .text {
   bottom: 0;
 }
 
-
-.radioGroup input[type='radio']~.radioBoxBorder {
+.radioGroup input[type="radio"] ~ .radioBoxBorder {
   border-radius: 4px;
-  border: 1px solid #F0F0F5;
+  border: 1px solid #f0f0f5;
 }
 
-.radioGroup input[type='radio']:checked~.radioBoxBorder {
-  border: 1px solid #2A2A2A;
+.radioGroup input[type="radio"]:checked ~ .radioBoxBorder {
+  border: 1px solid #2a2a2a;
 }
-

@@ -5,7 +5,6 @@
   color: var(--main-text);
 }
 
-
 .progressContainer {
   width: 536px;
   height: 24px;
@@ -13,7 +12,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 
 .progressBar {
   display: flex;
@@ -37,7 +35,7 @@
 }
 
 .progressIcon,
-span[phase=undone] {
+span[phase="undone"] {
   display: inline-block;
   position: relative;
   width: 24px;
@@ -47,21 +45,20 @@ span[phase=undone] {
 }
 
 .progressIcon {
-  background-color: var(--pg-addr-bg-color); 
+  background-color: var(--pg-addr-bg-color);
 }
 
-span[phase=undone] {
+span[phase="undone"] {
   background-color: transparent;
   border: 1px solid var(--progress-undone-color);
 }
 
-
-.progressText, 
-span[phase=undone] .progressText {
+.progressText,
+span[phase="undone"] .progressText {
   width: inherit;
   height: inherit;
   position: absolute;
-  font-weight: 700; 
+  font-weight: 700;
   font-size: 12px;
   line-height: 24px;
   text-align: center;
@@ -71,13 +68,12 @@ span[phase=undone] .progressText {
   color: var(--progress-done-color);
 }
 
-span[phase=undone] .progressText {
+span[phase="undone"] .progressText {
   color: var(--progress-undone-color);
 }
 
-
 .progressLabel,
-span[phase=undone] ~.progressLabel {
+span[phase="undone"] ~ .progressLabel {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -87,6 +83,6 @@ span[phase=undone] ~.progressLabel {
   color: var(--main-text);
 }
 
-span[phase=undone] ~.progress__label {
+span[phase="undone"] ~ .progress__label {
   color: var(--progress-undone-color);
 }
